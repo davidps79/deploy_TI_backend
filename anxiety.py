@@ -3,8 +3,8 @@ from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
 
-import Quiz, Question
-import Expert
+from dtos import Quiz, Question
+from entity import Expert
 
 anxiety_quiz = Quiz([
         Question(
