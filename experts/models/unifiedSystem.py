@@ -6,8 +6,6 @@ from experts.models.depression import DepressionExpertSystem
 from experts.models.entity import Expert
 from experts.models.insomnia import InsomniaExpertSystem
 from experts.models.stress import StressExpertSystem
-from config.supabaseConfig import get_supabase_client
-import json
 
 
 def ask_menu(question, options):
@@ -118,7 +116,6 @@ class UnifiedExpertSystem(Expert):
         super().__init__()
         self.recommendations = []
         self.diagnosis = []
-        self.supabase = get_supabase_client()
 
     #def get_input_by_system(self, system):
     #    if system == 'insomnia':
@@ -170,3 +167,4 @@ class UnifiedExpertSystem(Expert):
 
     def get_diagnosis(self):
         return self.diagnosis
+

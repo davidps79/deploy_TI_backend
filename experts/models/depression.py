@@ -170,7 +170,7 @@ class DepressionExpertSystem(KnowledgeEngine):
                                  medicacion, consecuencias, causas_fisiologicas):
         evidence = {
             'FactoresAmbientales': 1 if factores_ambientales['factores_ambientales'] == '1' else 0,
-            'Habitos': 1 if habitos['habitos'] == 'Sí' else 0,
+            'Habitos': 1 if habitos['habitos'] == '1' else 0,
             'CausasPsicologicas': 1 if causas_psicologicas['causas_psicologicas'] == '1' else 0,
             'CambiosHormonales': 1 if cambios_hormonales['cambios_hormonales'] == '1' else 0,
             'Medicación': 1 if medicacion['medicacion'] == '1' else 0,

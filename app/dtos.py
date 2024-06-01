@@ -23,3 +23,8 @@ class QuizAnswers(BaseModel):
 class AuthDto(BaseModel):
     email: str
     password: str
+
+
+class SessionData(BaseModel):
+    to_save: List[str]
+    user_id: str
