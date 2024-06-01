@@ -1,12 +1,12 @@
 from typing import Dict, Tuple
 
-from app.dtos import Quiz, QuizAnswers
-from .models.anxiety import AnxietyExpertSystem, anxiety_quiz
-from .models.depression import DepressionExpertSystem, depression_quiz
-from .models.entity import Expert
-from .models.insomnia import InsomniaExpertSystem, insomnia_quiz
-from .models.stress import StressExpertSystem, stress_quiz
-from .models.unifiedSystem import UnifiedExpertSystem, screening_quiz
+from dtos import Quiz, QuizAnswers
+from anxiety import AnxietyExpertSystem, anxiety_quiz
+from depression import DepressionExpertSystem, depression_quiz
+from entity import Expert
+from insomnia import InsomniaExpertSystem, insomnia_quiz
+from stress import StressExpertSystem, stress_quiz
+from unifiedSystem import UnifiedExpertSystem, screening_quiz
 
 # lock = threading.Lock()
 # : Dict[str, Tuple[Expert, Quiz]]

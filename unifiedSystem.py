@@ -1,11 +1,11 @@
 from experta import *
 
-from app.dtos import Quiz, Question
-from experts.models.anxiety import AnxietyExpertSystem
-from experts.models.depression import DepressionExpertSystem
-from experts.models.entity import Expert
-from experts.models.insomnia import InsomniaExpertSystem
-from experts.models.stress import StressExpertSystem
+from dtos import Quiz, Question
+from anxiety import AnxietyExpertSystem
+from depression import DepressionExpertSystem
+from entity import Expert
+from insomnia import InsomniaExpertSystem
+from stress import StressExpertSystem
 
 
 def ask_menu(question, options):
