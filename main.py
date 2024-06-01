@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from dtos import QuizAnswers, AuthDto, SessionData
 from authMethods import login_user, register_user
 from getSessions import get_user_sessions
-from experts.experts import get_quiz, get_analysis
+from experts import get_quiz, get_analysis
 from fastapi.middleware.cors import CORSMiddleware
 from supabaseConfig import get_supabase_client
 
