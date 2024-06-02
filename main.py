@@ -15,7 +15,7 @@ supabase = get_supabase_client()
 
 app = FastAPI()
 
-origins = ["*"]
+origins = ["https://deploy-ti-frontend.vercel.app", "http://deploy-ti-frontend.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
